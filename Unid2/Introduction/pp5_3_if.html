@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #282c34;
+        flex-direction: column;
+      }
+
+      canvas {
+        width: 50vw;
+        height: 50vh;
+        background-color: black;
+        margin-top: 10px;
+      }
+
+      button {
+        margin-top: 10px;
+      }
+
+      div {
+        text-align: center;
+        color: white;
+        margin-top: 10px;
+      }
+    </style>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const script = document.createElement('script');
+        script.src = 'dist/pp5_3_if.js';
+        document.head.appendChild(script);
+      });
+    </script>
+  </head>
+  <body>
+    <canvas id="rain_screen"></canvas>
+    <button id="start_rain_button">Start Rain</button>
+  </body>
+</html>
